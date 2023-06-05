@@ -5,7 +5,8 @@ import './static/css/styles.css';
 // Business Logic
 function getWeather(city) {
     let request = new XMLHttpRequest();
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=[YOUR-API-KEY-HERE]`;
+    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=[b374050776d5cda6d0c789791abb3cd2
+]`;
 
     request.addEventListener("loadend", function () {
         const response = JSON.parse(this.responseText);
